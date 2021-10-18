@@ -1,12 +1,10 @@
 # Spotify Playlist Cover Creator
 
-Transform this
+[![status](https://img.shields.io/badge/Follow%20me%20on-Spotify-green)](https://open.spotify.com/user/1166736052?si=52be728bc0fa4ce8)
 
-<img src="background.jpg" width="200">
-
-Into this
-
-<img src="Chill Vibes cover.jpg" width="200">
+|Transform this|Into this|
+|:---|:---|
+|<img src="background.jpg" height="200">|<img src="Chill Vibes cover.jpg" height="200">|
 
 With this simple script
 ```
