@@ -24,7 +24,9 @@ def resize_square(image):
     box = square_box(image),
     reducing_gap = None)
 
-def draw_hcentered_text(image, text, text_color, text_pos='center'):
+def write_text(image_dir, text, text_color, text_pos='center'):
+
+    image = resize_square(Image.open(image_dir))
 
     font = ImageFont.truetype("font.ttf", 72)
     v_pos = (0.5 if text_pos == 'center' else (0.2 if text_pos == 'up' else 0.8))
@@ -58,6 +60,6 @@ if __name__ == "__main__":
     text_color = sys.argv[3] # 'white' or '#ffffff' or (255, 255, 255)
     text_pos = sys.argv[4] # 'center' or 'up' or 'down'
 
-    draw_hcentered_text(resize_square(Image.open(image_dir)), title, text_color, text_pos).save(f"{title} cover.jpg")
+    write_text(image_dir, title, text_color, text_pos).save(f"{title} cover.jpg")
     
     print(f"Image saved as '{title} cover.jpg' in the current directory.")
